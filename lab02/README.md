@@ -18,11 +18,27 @@
 
 ## Introducción
 
-```
+Este proyecto despliega una página web estática utilizando **Lighttpd** dentro de un contenedor Docker.  
+Se muestran ejemplos de las 4 formas de aplicar estilos en HTML: Inline, Interno, Externo y usando JavaScript.
+
+---
+
+## 🐳 Comandos para ejecutar
+
+```bash
 docker build . -t lighttpd_lab02
 ```
 
-```
+```bash
 docker run -d --name web_lab02 -p 8096:80 lighttpd_lab02
 ```
+
+## 🌐 Acceso a la página
+
+En la misma máquina:
+
+```
+http://localhost:8096
+```
+
 © 2025 Olger Quispe Vilca
