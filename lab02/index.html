@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/lab01.css" />
+    <script src="js/lab01.js"></script>
+    <title>4 Formas de usar los estilos</title>
+  </head>
+  <style>
+    #h1 {
+      color: blue;
+      font-size: xx-large;
+    }
+  </style>
+  <body>
+    <h1 id="h1">This is a Heading</h1>
+    <p class="p1">This is 1 a paragraph</p>
+    <p class="p2">This is 2 paragraph</p>
+    <p id="parrafo-con-js" class="p3" style="color: red">
+      This is 3 a paragraph.
+    </p>
+    <p id="parrafo-con-script-externo"> This is 4 a paragraph</p>
+
+  </body>
+  <script>
+    // Seleccionamos el párrafo por su ID
+    const parrafo = document.getElementById("parrafo-con-js");
+
+    // Aplicamos estilos con JavaScript
+    parrafo.style.color = "green";
+    parrafo.style.fontSize = "20px";
+    parrafo.style.backgroundColor = "yellow";
+    parrafo.style.padding = "10px";
+    parrafo.style.borderRadius = "5px";
+  </script>
+  
+</html>
