@@ -29,7 +29,7 @@ Se muestran ejemplos de las 4 formas de aplicar estilos en HTML: Inline, Interno
 docker build . -t lighttpd_lab02
 ```
 
-```bash
+```bash copy
 docker run -d --name web_lab02 -p 8096:80 lighttpd_lab02
 ```
 
