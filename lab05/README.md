@@ -17,10 +17,20 @@
 
 Practica de completar el tutorial de [construir una aplicacion para la gestion de usuarios con Vue 3 + Vite](https://supabase.com/docs/guides/getting-started/tutorials/with-vue-3?queryGroups=database-method&database-method=dashboard): 
 
+Ingresando correo para loguearse:
 
+![Ingresando Correo](image-2.png)
 
+Confirmacion de correo: 
 
+![Confirmacion de correo](image-3.png)
 
+Actualizando mi informacion de "olger SALLE 2" A "olger SALLE 3"
+![Vue ACtualizando Informacion](image.png)
+
+Visualizacion de la actualizacion en el dashboard de Supabase: 
+
+![alt text](image-1.png)
 
 © 2025 Olger Quispe Vilca
 
