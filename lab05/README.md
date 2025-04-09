@@ -14,14 +14,14 @@
 
 ###### Crear mi entorno virtual en mi carpeta creada [`my_env/`](my_env).
 
-```shell
-PS C:\Users\ASUS\OneDrive\Documentos\Ingenieria Web\proyecto2\iw-25a\lab05\my_env> python -m venv .
+```shells
+python -m venv .
 ```
 
-###### Activar mi entorno virtual
+###### Activar mi entorno virtual en mi carpeta [`lab05/`](lab05).
 
 ```shell
-PS C:\Users\ASUS\OneDrive\Documentos\Ingenieria Web\proyecto2\iw-25a\lab05> .\my_env\Scripts\activate
+.\my_env\Scripts\activate
 ```
 
 ###### En la raiz del proyecto [`MyDjangoProject/`](MyDjangoProject). Ejecutar migraciones:
@@ -31,6 +31,8 @@ python manage.py migrate
 ```
 
 ###### Levantar el servidor
+
+En la carpeta de [`MyDjangoProject/`](MyDjangoProject). Ejecutar el servidor:
 
 ```shell
 python manage.py runserver
