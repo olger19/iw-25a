@@ -1,5 +1,29 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Propuesta de Frontend para el Silabo, comandos:
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Instalar dependecias
+```bash
+npm install
+```
+
+Compilar y cargar en caliente para el desarrollo
+```bash
+npm run dev
+```
+
+Compilar y minificar para producción
+```bash
+npm run build
+```
+
+Acceder maquina local al Proyecto Silabo ULASALLE
+```
+http://localhost:5173/
+```
+
+Despliegue de la pagina con Netlifly:
+
+```link
+https://iw-silabo-oqv.netlify.app/
+```
