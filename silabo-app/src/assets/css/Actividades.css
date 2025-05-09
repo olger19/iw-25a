@@ -1,0 +1,67 @@
+/* Estilos generales */
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-height: 80px; /* Asegura que tenga una altura mínima */
+  resize: none; /* Desactiva el cambio de tamaño del textarea */
+  overflow-y: hidden; /* Elimina la barra de desplazamiento vertical */
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Estilo de la descripción */
+.actividades .form-row {
+  margin-bottom: 20px;
+}
+
+.actividades label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.actividades .descripcion p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Estructura del encabezado de la actividad */
+.actividad-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.actividad-header h4 {
+  margin: 0;
+}
+
+/* Estilo para el botón "Eliminar Actividad" */
+button.eliminar {
+  background-color: #e74c3c;
+  color: white;
+  margin-top: 10px;
+}
+
+button.eliminar:hover {
+  background-color: #c0392b;
+}
+
+/* Estilo para el botón "Agregar Actividad" */
+button.agregar {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.agregar:hover {
+  background-color: #2980b9;
+}

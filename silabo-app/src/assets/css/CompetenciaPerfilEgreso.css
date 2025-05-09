@@ -1,0 +1,20 @@
+.competencia-perfil {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* El textarea ocupa todo el espacio disponible */
+  min-width: 200px; /* Limitar el ancho del textarea */
+  resize: none; /* Evita que el usuario redimensione el textarea manualmente */
+  overflow: hidden; /* Evita barras de desplazamiento */
+}

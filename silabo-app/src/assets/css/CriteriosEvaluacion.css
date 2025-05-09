@@ -1,0 +1,42 @@
+/* Estructura de la tabla de criterios de evaluación */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #3498db; /* Fondo azul para el encabezado */
+  color: white; /* Aseguramos que el texto del encabezado se vea bien */
+}
+
+td:first-child {
+  width: 15%; /* Reducir el tamaño de la columna de la izquierda (Evaluación) */
+}
+
+td:last-child {
+  width: 85%; /* La columna de la derecha (Descripción) ocupa el resto del espacio */
+}
+
+/* Ajuste para el textarea */
+textarea {
+  width: 100%;
+  max-width: 100%; /* Asegura que el textarea no sobrepase el tamaño de la celda */
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-height: 40px;
+  resize: none; /* Desactiva el cambio de tamaño del textarea */
+  box-sizing: border-box; /* Asegura que el padding no haga que el contenido se desborde */
+}
+
+textarea:focus {
+  border-color: #3498db;
+}

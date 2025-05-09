@@ -1,0 +1,76 @@
+.competencias-previas {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  display: grid; /* Usamos grid para alinear los elementos en una sola fila */
+  grid-template-columns: auto 1fr auto; /* Tres columnas: label, textarea y eliminar */
+  grid-gap: 10px; /* Espacio entre las celdas */
+  align-items: center; /* Alineación vertical de los elementos */
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap; /* Asegura que el label no salte de línea */
+}
+
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* El textarea ocupa todo el espacio disponible */
+  min-width: 200px; /* Limitar el ancho del textarea */
+  resize: none; /* Evita que el usuario redimensione el textarea manualmente */
+  overflow: hidden; /* Evita barras de desplazamiento */
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #2ecc71; /* Verde para el botón de agregar */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #27ae60; /* Un verde más oscuro al hacer hover */
+}
+
+/* Estilo para el botón de eliminar */
+button.eliminar {
+  background-color: #e74c3c; /* Rojo para el botón de eliminar */
+  width: 80px; /* Ancho fijo para el botón de eliminar */
+}
+
+button.eliminar:hover {
+  background-color: #c0392b; /* Un rojo más oscuro al hacer hover */
+}
+
+/* Centrar el botón de agregar */
+.agregar-row {
+  display: flex;
+  justify-content: center; /* Centra el botón en la fila */
+  margin-top: 20px;
+}
+
+/* Estilo para el botón de agregar */
+button.agregar {
+  width: auto; /* Asegura que el botón "Agregar Competencia" no se sobredimensione */
+  padding: 10px 20px;
+}

@@ -1,0 +1,42 @@
+.datos-generales {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr); /* 3 columnas */
+  grid-gap: 20px; /* Espacio entre las celdas */
+  column-gap: 50px; /* Espacio específico entre columnas */
+  row-gap: 20px; /* Espacio específico entre filas */
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="number"] {
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+input::placeholder {
+  font-style: italic;
+}

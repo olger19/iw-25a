@@ -1,0 +1,137 @@
+{
+  "curso": {
+    "nombre": "Ingeniería Web",
+    "codigo": "3.7.4.21",
+    "semestre": "VII",
+    "facultad": "Ingenierías y Arquitectura",
+    "area_formacion": "Estudios de Especialidad",
+    "tipo_curso": "Obligatorio",
+    "carrera_profesional": "Ingeniería de Software",
+    "creditos": 4,
+    "prerequisito": "Base de Datos II",
+    "periodo_lectivo": "2025 - I",
+    "horas": {
+      "teoria": 2,
+      "practica": 4
+    },
+    "docente": {
+      "nombre": "Richart Smith Escobedo Quispe",
+      "correo": "r.escobedo@ulasalle.edu.pe"
+    },
+    "fecha_inicio": "2025-03-10"
+  },
+  "competencias": [
+    "Utilizar las recomendaciones de la W3C para el desarrollo de aplicaciones web.",
+    "Conocer un framework MVC para el desarrollo de aplicaciones web.",
+    "Conocer los criterios de seguridad OWASP cuando se desarrollan aplicaciones web.",
+    "Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable. The core library is focused on the view layer only, and is easy to pick up and integrate with other libraries or existing projects. On the other hand, Vue is also perfectly capable of powering sophisticated Single-Page Applications when used in combination with modern tooling and supporting libraries."
+  ],
+  "competenciaEgreso": [
+    "Desarrollar, mantener y evaluar servicios y sistemas software que satisfagan todos los requisitos del usuario y se comporten de forma fiable y eficiente, sean asequibles de desarrollar y mantener y cumplan normativas de calidad, aplicando las teorías, principios, métodos y prácticas de la informática."
+  ],
+  "competenciasPrevias":[
+    "Conocimientos básicos de matemáticas discretas, cálculo, lógica computacional como base para la estructuración de datos, algoritmos, programación de computadoras, diseño y arquitectura de software.",
+    "Comprensión de la responsabilidad y ética profesional.",
+    "Gestionar el desarrollo de sistemas de software.",
+    "Capacidad de aprender y actualizarse permanentemente."
+  ],
+  "sumilla":[
+    "El curso contempla los siguientes temas: Programación del lado del servidor y programación de lado del cliente. Servicios web y servidores web. Estructura de la información: Hipertexto, Hipermedia. Proceso del diseño web. Medios digitales: Librerías digitales. Herramientas de captura y producción de medios. Compresión. Streaming media. Formatos multimedia. Desarrollo web: Interfaces web. Implementación e integración web. Integración de Bases de Datos. Accesibilidad y vulnerabilidad: Seguridad en el lado del cliente. Seguridad en el lado del Servidor. Programación en el lado del servidor: Comandos básicos de UNIX, CGIs; condicionales, ciclos, expresiones regulares, arreglos tablas hash, listas, archivos, pruebas de unidad; formularios: GET, POST. Conexión entre el CGI y la base de datos. Cookies. Programación en el lado del cliente: JavaScript, páginas dinámicas. Combos desplegables con JavaScript, CGIs y Bases de Datos. AJAX, el objeto XMLHttpRequest, APIs y Servicios WEB. Ejemplo de interacción: CGIs, Bases de datos, AJAX, CSS. HTML5 y otras propuestas. Conectando aplicaciones WEB con Bases de datos bajo un patrón modelo vista controlador. Formularios y verificación de campos; inyección de código; cookies, sesiones; seguridad WEB. Programando el cliente: Bibliotecas de programación para animaciones del lado del cliente y frameworks para webs dinámicas."
+  ],
+  "unidades": [
+    {
+      "fechaInicio": "2025-03-10",
+      "fechaFin": "2025-04-05",
+      "denominacion": "Tecnologías para el desarrollo de aplicaciones web",
+      "enunciado": "El estudiante conoce y utiliza responsablemente las tecnologías para el desarrollo de aplicaciones web.",
+      "semanas": [
+        { "contenido": "Presentación del Curso. Sílabo. Metodología. Sistema de Evaluación. Historia. Arquitectura. Protocolo HTTP. Inicio Rápido de un Servicio de alojamiento de Base datos en la Nube. Inicio rápido en Frameworks Front-End." },
+        { "contenido": "Tecnologías de Desarrollo Web Editor de texto: Vim. IDE: VSCode. Front-End: Estándares Web, frameworks. Back-End: Lenguajes de Programación, frameworks. Sistema de control de versiones: Git. (GitHub)." },
+        { "contenido": "Despliegue de aplicaciones web desde contenedores con Docker." },
+        { "contenido": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web" }
+      ],
+      "metodologia": "Lectura: Revisión de la documentación oficial de las plataformas. Prácticas: Implementación de funcionalidades desde repositorios de código fuente.",
+      "fuentes": [
+        "W3Schools",
+        "MDN Web Docs",
+        "'HTML and CSS: Design and Build Websites' by Jon Duckett"
+      ]
+    },
+    {
+      "fechaInicio": "2025-04-06",
+      "fechaFin": "2025-05-10",
+      "denominacion": "Frameworks Back-end para el desarrollo de aplicaciones Web",
+      "enunciado": "El estudiante aprenderá a construir aplicaciones web utilizando el framework React.",
+      "semanas": [
+        { "contenido": "JavaScript en el Back-End." },
+        { "contenido": "Plataforma LAMP y despliegue de aplicaciones web con frameworks Back-End." },
+        { "contenido": "Exposiciones de Frameworks Back-End." },
+        { "contenido": "Despliegue de plataformas de propósito general y específicas para el desarrollo de aplicaciones Web." }
+      ],
+      "metodologia": "Clases magistrales, trabajos prácticos, proyectos en grupo.",
+      "fuentes": [
+        "React Docs",
+        "W3Schools",
+        "MDN Web Docs"
+      ]
+    },
+    {
+      "fechaInicio": "2025-05-11",
+      "fechaFin": "2025-06-15",
+      "denominacion": "Seguridad en el desarrollo de aplicaciones web",
+      "enunciado": "El estudiante aprenderá a crear servidores y APIs utilizando Node.js.",
+      "semanas": [
+        { "contenido": "Examen Parcial." },
+        { "contenido": "OWASP Top Ten. Inyección SQL. Exposiciones OWASP top Ten." },
+        { "contenido": "Exposiciones OWASP top Ten." },
+        { "contenido": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web" }
+      ],
+      "metodologia": "Desarrollo con Node.js, implementación de servidores y APIs, pruebas unitarias.",
+      "fuentes": [
+        "Node.js Docs",
+        "Express.js Docs",
+        "MongoDB Docs"
+      ]
+    },
+    {
+      "fechaInicio": "2025-06-16",
+      "fechaFin": "2025-07-10",
+      "denominacion": "Proyecto de desarrollo de una aplicación web",
+      "enunciado": "El estudiante aprenderá a desplegar aplicaciones web y aplicar buenas prácticas de desarrollo.",
+      "semanas": [
+        { "contenido": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web" },
+        { "contenido": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web" },
+        { "contenido": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web" },
+        { "contenido": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web" },
+        { "contenido": "Examen Final." }
+      ],
+      "metodologia": "Clases prácticas, trabajo en equipo, revisión de documentación.",
+      "fuentes": [
+        "Heroku Docs",
+        "AWS Docs",
+        "W3Schools"
+      ]
+    }
+  ],
+  "actividades": [
+    {
+      "titulo": "Investigación Formativa",
+      "descripcion": "Los estudiantes investigan en la documentación oficial de proyectos de plataformas para el desarrollo web."
+    },
+    {
+      "titulo": "Responsabilidad Social Universitaria",
+      "descripcion": "Los estudiantes desarrollarán aplicaciones web utilizando tecnologías web y plataformas para el Front-End y Back-End que resuelven el requerimiento de presentación de documentos académicos (Silabo) y asignaciones académicas a docentes (Reparto de carga académica)."
+    }
+  ],
+  "criterios_evaluacion": [
+    { "evaluacion": "Evidencia 1", "descripcion": "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web. Exposiciones individuales y grupales." },
+    { "evaluacion": "Evidencia 2", "descripcion": "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web. Exposiciones individuales y grupales." },
+    { "evaluacion": "Examen Parcial", "descripcion": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web Examen - rúbrica" },
+    { "evaluacion": "Evidencia 3", "descripcion": "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web. Exposiciones individuales y grupales." },
+    { "evaluacion": "Evidencia 4", "descripcion": "Prácticas de laboratorio sobre uso de tecnologías y plataformas de desarrollo web. Exposiciones individuales y grupales." },
+    { "evaluacion": "Examen Final", "descripcion": "Presentación de avance de proyecto: Desarrollo incremental de una aplicación web Examen - rúbrica" }
+  ],
+  "firma": {
+    "url": "/Firma.png"
+  }
+}
