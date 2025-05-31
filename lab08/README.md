@@ -34,11 +34,20 @@ lab08/
         └── ...
 ```
 
+## Repositorio
+
+Clone el repositorio
+
+```sh
+git clone https://github.com/olger19/iw-25a.git
+```
+
+
 ## Instalación y ejecución
 
 ### 1. Crear y activar un entorno virtual
 
-En la carpeta `lab08`:
+En la carpeta `lab08` ejecute esto:
 
 **Windows:**
 ```sh
