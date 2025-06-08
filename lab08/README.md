@@ -1,6 +1,6 @@
 # PRACTICA-REST - API REST para gestión académica
 
-Este proyecto demuestra cómo usar un API REST para gestionar cursos, profesores, estudiantes, cargas de trabajo e inscripciones.
+Este proyecto demuestra cómo usar un API REST para gestionar cursos, profesores, estudiantes, cargas de trabajo e inscripciones. **En este ejercicio probaremos todos los metodos enfocados en Cursos.**
 
 ## 🚀 Requisitos previos
 
@@ -11,11 +11,122 @@ http://127.0.0.1:8000/
 - Base de datos migrada y con modelos activos
 - Postman (opcional para probar endpoints)
 
+## Configuracion JWT con Django REST FRAMEWROK 
+
+1️⃣ Instalar librería JWT
+
+```bash
+pip install djangorestframework-simplejwt
+```
+
+2️⃣ Configurar settings.py
+
+Abre tu archivo: `MyDjangoProject/settings.py`
+
+Agrega (o edita), su settings debe tener lo siguiente:
+
+```python
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',  # Opcional: proteger por defecto
+    )
+}
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework',  # Django REST Framework
+    'rest_framework_simplejwt',  # JWT Authentication ADD
+    'MyWebApps.MyFirstApplication',
+]
+
+# JWT Authentication Settings ADD
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(hours=1),  # puedes cambiar el tiempo que quieras ADD
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),    # refresh token duración para sacar un nuevo acces token ADD
+    'ROTATE_REFRESH_TOKENS': False,
+    'BLACKLIST_AFTER_ROTATION': True,
+    'ALGORITHM': 'HS256',
+    'SIGNING_KEY': SECRET_KEY,
+    'AUTH_HEADER_TYPES': ('Bearer',),
+}
+```
+3️⃣ Agregar las rutas JWT en tu urls.py global
+
+Tu urls.py global debería estar en: `MyDjangoProject/urls.py`
+
+Agrega esto al inicio:
+```python
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+```
+
+Y en tu urlpatterns, agrega:
+```python
+urlpatterns = [
+    # tus otras rutas
+
+    # Rutas para JWT:
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+
+    # Incluye tus apps:
+    path('myapp/', include('MyWebApps.MyFirstApplication.urls')),  # ejemplo
+]
+```
+
+4️⃣ Cómo usarlo
+👉 Paso 1: Obtener token
+Haces un POST a:
+```bash
+http://127.0.0.1:8000/api/token/
+```
+
+Con body:
+``` json
+{
+    "username": "admin",
+    "password": "1234"
+}
+
+```
+
+👉 Paso 2: El servidor responde:
+```json
+{
+    "access": "jwt_token_aqui",
+    "refresh": "refresh_token_aqui"
+}
+```
+
+👉 Paso 3: Usa el token en las cabeceras de tus peticiones:
+```makefile
+Authorization: Bearer jwt_token_aqui
+```
+
+Por ultimo agregue a las vistas de Courses: 
+
+```python
+from rest_framework.permissions import IsAuthenticated
+
+```
+y
+
+```python
+permission_classes = [IsAuthenticated]
+```
+
 ---
 
-## 📁 Colección Postman
+## 📁 Postman 
 
-Se incluye el archivo `iw.postman_collection.json` que puede importarse directamente en Postman para probar los siguientes endpoints:
+Se incluye los metodos para probar en postman, no se olvide de agregar el token jwt a postman:
 
 1. **Listar Cursos**
  - `GET http://127.0.0.1:8000/api/courses/`
@@ -38,6 +149,11 @@ Se incluye el archivo `iw.postman_collection.json` que puede importarse directam
      "laboratory": true
    }
    ```
+3. **Actualizar Curso**
+- `PUT http://127.0.0.1:8000/api/courses/af0262e6-f1ca-4dec-9353-cc5a10f10656/`
+
+4. **Eliminar Curso**
+- `DELETE http://127.0.0.1:8000/api/courses/af0262e6-f1ca-4dec-9353-cc5a10f10656/`
 
 3. **Crear Profesor**
  - `POST http://127.0.0.1:8000/api/teachers/`
@@ -109,14 +225,7 @@ Se incluye el archivo `iw.postman_collection.json` que puede importarse directam
 
 ---
 
-## 📌 Notas adicionales
+## ✍ Autor
 
-- Asegúrese de que los IDs utilizados (por ejemplo `teacher: 2`, `course: 2`, etc.) existan previamente.
-- Puede usar el archivo `test_api_examples.py` para automatizar las pruebas por consola.
-
----
-
-## ✍ Autora
-
-Marycielo Bedoya Pinto  
-GitHub: [@mary1508](https://github.com/mary1508)
+Olger Quispe Vilca  
+GitHub: [@olger19](https://github.com/olger19)
