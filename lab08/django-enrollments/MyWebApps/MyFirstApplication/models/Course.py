@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 import uuid
 
 class Course(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False) # Unique identifier for the course Example: 3bfab4e3-0859-45d1-b9e4-577abeb2bdfc
     CURRICULUMS = [
          (0, 'Sin Plan'),
          (2017, 'Plan 2017'),

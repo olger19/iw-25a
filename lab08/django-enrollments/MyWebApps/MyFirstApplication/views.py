@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from django.http import Http404
+from rest_framework.permissions import IsAuthenticated
 
 from .models.Course import Course
 from .models.Teacher import Teacher
@@ -30,6 +31,7 @@ class CourseListCreateView(generics.ListCreateAPIView):
     """
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
+    permission_classes = [IsAuthenticated] # Requiere autenticación para acceder a las vistas de cursos
 
 
 class CourseDetailView(generics.RetrieveUpdateDestroyAPIView):
@@ -41,7 +43,7 @@ class CourseDetailView(generics.RetrieveUpdateDestroyAPIView):
     """
     queryset = Course.objects.all()
     serializer_class = CourseDetailSerializer
-
+    permission_classes = [IsAuthenticated] # Requiere autenticación para acceder a las vistas de cursos
 
 # =============================================================================
 # TEACHER VIEWS
