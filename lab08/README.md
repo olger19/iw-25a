@@ -1,15 +1,14 @@
-# PRACTICA-REST - API REST para gestión académica
+# PRACTICA JWT CON DJANGO
 
-Este proyecto demuestra cómo usar un API REST para gestionar cursos, profesores, estudiantes, cargas de trabajo e inscripciones. **En este ejercicio probaremos todos los metodos enfocados en Cursos.**
+**En este ejercicio probaremos todos los metodos enfocados en Cursos mediante token JWT.**
 
 ## 🚀 Requisitos previos
 
 - Python instalado
 - `pip install requests` (si se usará `test_api_examples.py`)
-- Servidor Django corriendo en:
-http://127.0.0.1:8000/
+- Servidor Django corriendo en: `http://127.0.0.1:8000/`
 - Base de datos migrada y con modelos activos
-- Postman (opcional para probar endpoints)
+- Postman para probar endpoints
 
 ## Configuracion JWT con Django REST FRAMEWROK 
 
