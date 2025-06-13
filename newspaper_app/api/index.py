@@ -1,1 +1,1 @@
-from newspaper_project.wsgi import application
+from newspaper_project.wsgi import application as app
