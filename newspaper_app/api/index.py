@@ -1,0 +1,1 @@
+from newspaper_project.wsgi import application
