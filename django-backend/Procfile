@@ -1,1 +1,1 @@
-web: gunicorn backend_silabo.wsgi
+web: gunicorn backend_silabo.backend_silabo.wsgi
